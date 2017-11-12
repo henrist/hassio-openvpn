@@ -1,0 +1,22 @@
+{
+  "boot": "auto",
+  "description": "OpenVPN for Hass.io",
+  "devices": [
+    "/dev/net/tun:/dev/net/tun:rw"
+  ],
+  "host_network": true,
+  "name": "OpenVPN",
+  "options": {
+    "config": ""
+  },
+  "privileged": [
+    "NET_ADMIN"
+  ],
+  "schema": {
+    "config": "str"
+  },
+  "slug": "openvpn",
+  "startup": "application",
+  "url": "https://github.com/henrist/hassio-openvpn",
+  "version": "0.0.1"
+}
